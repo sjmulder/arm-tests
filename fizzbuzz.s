@@ -28,8 +28,8 @@ _loop:
 	ldreq r0, =fibu	//  if 0, fmt = 'FizzBuzz'
 	mov   r1, r4
 	bl    printf
-	add   r4, 1
-	cmp   r4, 100
+	add   r4, #1
+	cmp   r4, #100
 	ble   _loop
 	mov   r0, #0
 	pop   {lr}
